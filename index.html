@@ -3,17 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To Do List App</title>
+    <title>To-Do List App</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="box">
-            <h2>To Do List</h2>
-            <input type="text" placeholder="Write here..." id="inputBx">
-            <ul id="list"></ul>
+    <div class="app">
+        <div class="container">
+            <div id="wrapper">
+                <input type="text"
+                placeholder="Task To Be Done...">
+                <button id="add-btn">Add</button>
+            </div>
+            <div id="tasks">
+                <p id="pending-tasks">
+                    You have <span class="count-value">0</span> task(s) to complete.
+                </p>
+            </div>
         </div>
+        <p id="error">Input cannot be empty!</p>
     </div>
-
+    <script src="app.js"></script>
 </body>
 </html>
